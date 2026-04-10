@@ -1,0 +1,239 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #111, #444);
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffb347;
+    }
+
+    .banner {
+      background: url('https://images.unsplash.com/photo-1445205170230-053b83016050') center/cover;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .banner h2 {
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 36px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #222;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 22px;
+    }
+
+    .preco {
+      color: #e67e22;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .card button {
+      background-color: #222;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #ffb347;
+      color: black;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Style Store</h1>
+    <p>Moda, estilo e conforto em um só lugar</p>
+  </header>
+
+  <nav>
+    <a href="#roupas">Roupas</a>
+    <a href="#sapatos">Sapatos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="banner">
+    <h2>Nova Coleção 2026</h2>
+  </div>
+
+  <section id="roupas">
+    <h2>Roupas</h2>
+
+    <div class="produtos">
+      <div class="card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_976969-MLB84370485442_052025-O-kit-10-camiseta-preta-lisa-basica-camisa-malha-100-algodo.webp" alt="Camiseta">
+        <h3>Camiseta Preta</h3>
+        <p class="preco">R$ 59,90</p>
+        <button>Comprar</button>
+      </div>
+
+<div class="card">
+        <img src="https://http2.mlstatic.com/D_Q_NP_737282-MLB84670750397_052025-B-camiseta-branca-camisa-branca-100-poliester-lisa.webp" alt="Camiseta">
+        <h3>Camiseta branca</h3>
+        <p class="preco">R$ 59,90</p>
+        <button>Comprar</button>
+      </div>
+
+
+      <div class="card">
+        <img src="https://s.fashioncloset.com.br/product/2025/04/whatsapp-image-2025-04-11-at-13.49.09.jpeg?format=webp" alt="Calça">
+        <h3>Calça cargo</h3>
+        <p class="preco">R$ 149,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="https://www.asteric.com.br/cdn/shop/files/18_205f695a-ad68-481a-9e02-ec8b57bf323b.png?v=1719895676" alt="Calça">
+        <h3>Calça baggy</h3>
+        <p class="preco">R$ 160,00</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sapatos">
+    <h2>Sapatos</h2>
+
+    <div class="produtos">
+      <div class="card">
+        <img src="https://static.netshoes.com.br/produtos/tenis-nike-air-max-excee-masculino/14/2IC-4294-014/2IC-4294-014_zoom1.jpg?ts=1772709820&ims=1088x" alt="Tênis">
+        <h3>Tênis Branco</h3>
+        <p class="preco">R$ 149,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB4Pj5sBvm0L9ITnXua-gpdiZRfTwV6Audg&s" alt="Tênis">
+        <h3>Tênis vans</h3>
+        <p class="preco">R$ 179,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUrz_bWLpQQIvTXHU6tKvh3wsaqOGPCAXEw&s" alt="Bota">
+        <h3>Bota Preta</h3>
+        <p class="preco">R$ 229,90</p>
+        <button>Comprar</button>
+      </div>
+
+    <div class="card">
+        <img src="https://down-br.img.susercontent.com/file/br-11134207-7qukw-liw1v5524vudc2" alt="sandália">
+        <h3>sandália feminina</h3>
+        <p class="preco">R$ 49,90</p>
+        <button>Comprar</button>
+      </div>
+
+
+   </div>
+  </section>
+
+  <footer id="contato">
+    <p>Style Store © 2026</p>
+    <p>Email: stylestore@email.com | WhatsApp: (69) 99373-5441</p>
+  </footer>
+
+</body>
+</html>
+```
